@@ -152,13 +152,15 @@ _tracker_.push(['client_type', 'PC']), _tracker_.push(['client_edition', '0.0.1'
 function changeInfo(){
   if($('#4090672711')){
     if($("#4090672711").find("span").length>0){
-      $($("#4090672711").find("span")[0]).text('邹老师:\n13765142249');
+      var phoneSpan = $("#4090672711").find("span")[0];
+      $(phoneSpan).html('邹老师:13765142249<br>咨询QQ：694490364');
     }
   }
 
   if($('#3900818970')){
     if($("#3900818970").find("span").length>0){
-      $($("#3900818970").find("span")[0]).text('咨询QQ：694490364');
+      var tipSpan = $("#3900818970").find("span")[0];
+      $(tipSpan).html('学好一技在手<br>走遍天下不愁');
     }
   }
 
